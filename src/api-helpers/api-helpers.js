@@ -131,4 +131,11 @@ export const addmovie = async (data) => {
     throw err;
   }
 };
-  ;
+  export const updateMovie = async (id, data) => {
+  return await axios.put(`/movie/${id}`, data);
+};
+export const deleteMovie = async (id) => {
+  return await axios.delete(`/movie/${id}`);
+};
+
+
